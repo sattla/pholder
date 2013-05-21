@@ -1,0 +1,35 @@
+{
+"name": "pholder",
+"title": "jQuery place holder",
+"description": "cross browser place holder plugin for jquery.",
+"keywords": [
+"placeholder",
+"watermark",
+"html5"
+],
+"version": "1.0.0",
+"author": {
+"name": "sattla",
+"url": "https://github.com/sattla"
+},
+"maintainers": [
+{
+"name": "igor bur",
+"email": "sattla@hotmail.com",
+"url": "http://www.360pro.co.il"
+}
+],
+"licenses": [
+{
+"type": "MIT",
+"url": "http://opensource.org/licenses/MIT"
+}
+],
+"bugs": "",
+"homepage": "https://github.com/sattla/pholder",
+"docs": "https://github.com/sattla/pholder",
+"download": "https://github.com/sattla/pholder/archive/master.zip",
+"dependencies": {
+"jquery": ">=1.5"
+}
+}
