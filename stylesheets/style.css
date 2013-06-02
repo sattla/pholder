@@ -18,6 +18,7 @@ html{background-color:#ecf0f1; font-family: conv_amble-regular;}
     margin-top: -45px;
     z-index: 1000;
     cursor: pointer;
+    margin-left: -15px;
 }
 
 .header{
@@ -29,7 +30,7 @@ width:400px;
     font-weight: lighter;
     font-size: 25px;
     margin-top: 65px;
-    margin-left: -26px;
+    margin-left: -25px;
 }
 .inputStyle{
     width: 300px;
