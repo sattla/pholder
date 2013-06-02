@@ -9,13 +9,13 @@ html{background-color:#ecf0f1; font-family: conv_amble-regular arial;}
 
 
 .header .ico{
-    background-image: url(ico.svg);
-    width: 90px;
+    background: url(ico.svg) no-repeat -5px 0;
+    width: 100px;
     height: 90px;
     float: left;
     background-repeat: no-repeat;
     padding-bottom: 20px;
-    margin-top: -26px;
+    margin-top: -45px;
     z-index: 1000;
     cursor: pointer;
 }
@@ -48,13 +48,7 @@ width:400px;
     text-align: center;
     padding-top: 11px;
     cursor: pointer;
-    /*-o-box-shadow: 0px 4px 0px rgba(41,128,185,1);
-    -moz-box-shadow: 0px 4px 0px rgba(41,128,185,1);
-    -webkit-box-shadow: 0px 4px 0px rgba(41,128,185,1);
-    -ms-box-shadow: 0px 4px 0px rgba(41,128,185,1);
-  box-shadow: 0px 4px 0px rgba(41,128,185,1);*/
 }
-.b :hover{background-color: #333;}
 
 .wtmrk{color: #3498db;font-style: italic;}
 .coolwtmrk{color: #e74c3c;font-size: 14px;font-family:'Comic Sans MS';font-style: italic;}
@@ -63,5 +57,5 @@ width:400px;
     margin:150px auto;
     width:400px;
 }
-svg g path{ fill: white;transition:all 0.4s;-webkit-transition:all 0.4s;}
-svg:hover g path{fill: #C0392B;transition:all 0.4s;-webkit-transition:all 0.4s;}
+.ico svg g path{ fill: white;transition:all 0.4s;-webkit-transition:all 0.4s;}
+.ico svg:hover g path{fill: #C0392B;transition:all 0.4s;-webkit-transition:all 0.4s;}
