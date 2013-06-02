@@ -3,17 +3,8 @@
 <meta charset="utf-8" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="jquery.pholder.js"></script>
-<style>
-  .inputStyle{
-		width: 300px;
-		height: 40px;
-		border: 2px solid #c4c4c4;
-		padding: 0 15px;
-		direction:ltr;
-	}
-	.wtmrk{color: grey;font-style: italic;}
-	.coolwtmrk{color: red;font-size: 14px;font-family:'Comic Sans MS';font-style: italic;}
-</style>
+ <link href="style.css" rel="stylesheet">
+
 <script>
 $(document).ready(function(){
 	$("input").pholder();
@@ -21,14 +12,20 @@ $(document).ready(function(){
 	$("input[name=phone]").pholder({ className:'wtmrk', pholdertext:'Phone' });
 });
 </script>
+
 </head>
 <body>
-
+<div class="container">
+   <div class="header">
+       <div class="ico"></div>
+       <h3>I am a cool placeholder</h3>
+   </div>
 <input type="text" class="inputStyle" name="name" /><br><br>
 <input type="text" class="inputStyle" name="phone" /><br><br>
-<br>
-<input type="text" class="inputStyle" placeholder="Name" /><br><br>
-<input type="text" class="inputStyle" placeholder="Phone" /><br><br>
+<input type="text" class="inputStyle" placeholder="Email" /><br><br>
+<div class="b">submit</div>
 
+
+</div>
 </body>
 </html>
