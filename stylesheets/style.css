@@ -5,11 +5,11 @@
     font-weight: normal;
     font-style: normal;
 }
-html{background-color:#ecf0f1; font-family: conv_amble-regular arial;}
+html{background-color:#ecf0f1; font-family: conv_amble-regular;}
 
 
 .header .ico{
-    background: url(ico.svg) no-repeat -5px 0;
+    /*background: url(ico.svg) no-repeat -5px 0;*/
     width: 100px;
     height: 90px;
     float: left;
