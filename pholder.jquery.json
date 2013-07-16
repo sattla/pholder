@@ -3,7 +3,7 @@
 	"title": "jQuery place holder",
 	"description": "cross browser place holder plugin for jquery.",
 	"keywords": ["placeholder","watermark","html5"],
-	"version": "3.2.6",
+	"version": "3.3.1",
 	"author": {
 		"name": "sattla",
 		"url": "http://il.linkedin.com/in/igorbur/"
