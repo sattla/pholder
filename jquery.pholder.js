@@ -1,5 +1,5 @@
 (function(){
-  (function($){
+	(function($){
 		$.pholder = function (element,_options){
 			element.each(function(){
 				var inp = $(this),
@@ -28,12 +28,12 @@
 				}
 				inp.prop("placeholder","");
 				inp.val(opt.pholdertext).addClass(opt.className);
-				inp.click(function(){
+				inp.bind('click.pholder', function(){
 					if (inp.val()==opt.pholdertext){
 						setCaretPosition(this);
 					}
 				});
-				inp.keydown(function(e){
+				inp.bind('keydown.pholder paste.pholder', function(e){
 					var a = [8,13,16,17,18,19,20,27,33,34,35,36,37,38,39,40,45,46];
 					if (inp.val()==opt.pholdertext){
 						for (i=0;i<a.length;i++){
@@ -44,13 +44,13 @@
 						inp.removeClass(opt.className).val("");
 					}
 				});
-				inp.keyup(function(){
+				inp.bind('keyup.pholder', function(){
 					if (inp.val()==""){
 						inp.val(opt.pholdertext).addClass(opt.className);
 						setCaretPosition(this);
 					}
 				});
-				inp.blur(function(){
+				inp.bind('blur.pholder', function(){
 					if (inp.val()==""){
 						inp.val(opt.pholdertext).addClass(opt.className);
 					};
@@ -58,7 +58,8 @@
 			});
 		};
 		return $.fn.pholder = function (_options){
-			return new $.pholder(this, _options);
+			$.pholder(this, _options);
+			return this;
 		};
 	})(jQuery);
 }).call(this);
